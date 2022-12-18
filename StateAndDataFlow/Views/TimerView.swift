@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  TimerView.swift
 //  StateAndDataFlow
 //
 //  Created by Alexey Efimov on 14.12.2022.
@@ -7,14 +7,13 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TimerView: View {
     @StateObject private var timer = TimeCounter()
-    
-    private let user = StorageManager.shared.fetchUser()
+    @EnvironmentObject private var userManager: UserManager
     
     var body: some View {
         VStack {
-            Text("Hi, \(user.name)")
+            Text("Hi, \(userManager.user.name)")
                 .font(.largeTitle)
                 .padding(.top, 100)
             Text(timer.counter.formatted())
@@ -32,13 +31,14 @@ struct ContentView: View {
     }
     
     private func logOut() {
-        StorageManager.shared.deleteUser()
+        DataManager.shared.clear(userManager: userManager)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TimerView()
+            .environmentObject(UserManager())
     }
 }
 

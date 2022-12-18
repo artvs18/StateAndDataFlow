@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51088C66294CEF6100F97497 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51088C65294CEF6100F97497 /* StorageManager.swift */; };
-		51C37B57294E3E5700809139 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C37B56294E3E5700809139 /* User.swift */; };
+		51088C66294CEF6100F97497 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51088C65294CEF6100F97497 /* DataManager.swift */; };
+		51A2C7C5294F453300B23B69 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A2C7C4294F453300B23B69 /* UserManager.swift */; };
 		A80D393B294A077F00BE3266 /* StateAndDataFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D393A294A077F00BE3266 /* StateAndDataFlowApp.swift */; };
-		A80D393D294A077F00BE3266 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D393C294A077F00BE3266 /* ContentView.swift */; };
+		A80D393D294A077F00BE3266 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D393C294A077F00BE3266 /* TimerView.swift */; };
 		A80D393F294A077F00BE3266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80D393E294A077F00BE3266 /* Assets.xcassets */; };
 		A80D3942294A077F00BE3266 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80D3941294A077F00BE3266 /* Preview Assets.xcassets */; };
 		A80D3949294A47C100BE3266 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D3948294A47C100BE3266 /* TimeCounter.swift */; };
@@ -19,11 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		51088C65294CEF6100F97497 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
-		51C37B56294E3E5700809139 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		51088C65294CEF6100F97497 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		51A2C7C4294F453300B23B69 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		A80D3937294A077F00BE3266 /* StateAndDataFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAndDataFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80D393A294A077F00BE3266 /* StateAndDataFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAndDataFlowApp.swift; sourceTree = "<group>"; };
-		A80D393C294A077F00BE3266 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A80D393C294A077F00BE3266 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		A80D393E294A077F00BE3266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A80D3941294A077F00BE3266 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A80D3948294A47C100BE3266 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		51088C67294CEF7300F97497 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A80D393C294A077F00BE3266 /* ContentView.swift */,
+				A80D393C294A077F00BE3266 /* TimerView.swift */,
 				A80D394E294A530900BE3266 /* StarterView.swift */,
 				A80D394A294A4F3400BE3266 /* RegisterView.swift */,
 			);
@@ -63,17 +63,10 @@
 		51088C69294CEFB500F97497 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				51088C65294CEF6100F97497 /* StorageManager.swift */,
+				51088C65294CEF6100F97497 /* DataManager.swift */,
+				51A2C7C4294F453300B23B69 /* UserManager.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		51C37B58294E3E6300809139 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				51C37B56294E3E5700809139 /* User.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		A80D392E294A077F00BE3266 = {
@@ -97,7 +90,6 @@
 			children = (
 				51088C68294CEFA300F97497 /* App */,
 				51088C67294CEF7300F97497 /* Views */,
-				51C37B58294E3E6300809139 /* Models */,
 				51088C69294CEFB500F97497 /* Services */,
 				A80D3948294A47C100BE3266 /* TimeCounter.swift */,
 				A80D393E294A077F00BE3266 /* Assets.xcassets */,
@@ -187,10 +179,10 @@
 				A80D3949294A47C100BE3266 /* TimeCounter.swift in Sources */,
 				A80D394B294A4F3400BE3266 /* RegisterView.swift in Sources */,
 				A80D394F294A530900BE3266 /* StarterView.swift in Sources */,
-				51088C66294CEF6100F97497 /* StorageManager.swift in Sources */,
-				A80D393D294A077F00BE3266 /* ContentView.swift in Sources */,
+				51088C66294CEF6100F97497 /* DataManager.swift in Sources */,
+				A80D393D294A077F00BE3266 /* TimerView.swift in Sources */,
 				A80D393B294A077F00BE3266 /* StateAndDataFlowApp.swift in Sources */,
-				51C37B57294E3E5700809139 /* User.swift in Sources */,
+				51A2C7C5294F453300B23B69 /* UserManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
